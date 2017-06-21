@@ -10,7 +10,7 @@ app.locals.pagetitle = "Movie Reviews";
 var moviesData = require('./data.json');
 
 app.get('/',  function(req, res){
-	res.render('homePage',
+	res.render('homepage',
 		 { movieObj : moviesData.movies});
 });
 
