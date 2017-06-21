@@ -1,0 +1,32 @@
+{
+	"movies" : {
+		"movie1" : {
+			"name" : "Wonder Woman",
+			"rating" : 4,
+			"review" : "Wonder woman is probably the best DC comics movie till day!!! Gal Gadot's performance will stun you. Go watch it.",
+			"movieRoute" : "/wonderWoman",
+			"imageName" : "ww.jpg"
+		},
+		"movie2" : {
+			"name" : "The Mummy",
+			"rating" : 2,
+			"review" : "Not an impressive reboot nor a good start to the Dark Universe. Watch it if you are a Tom Cruise fan.",
+			"movieRoute" : "/theMummy",
+			"imageName" : "tm.jpg"
+		},
+		"movie3" : {
+			"name" : "Cars 3",
+			"rating" : 3,
+			"review" : "Cars 3 not a regular Pixar movie that want to watch. It's different from mainstream Pixar movies and becomes uninteresting at times.",
+			"movieRoute" : "/carsThree",
+			"imageName" : "c3.jpg"
+		},
+		"movie4" : {
+			"name" : "Despicable Me 3",
+			"rating" : 4,
+			"review" : "This movie carries the energy from the past 3 minion films. A great watch. I would say it's the best animated movie of 2017 so far.",
+			"movieRoute" : "/despicableMeThree",
+			"imageName" : "d3.jpg"
+		}
+	}
+}

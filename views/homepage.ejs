@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include partials/page/head.ejs %>
+</head>
+<body>
+  <% include partials/page/header.ejs %>
+  <div class="container">
+    <h3 class="alert alert-success">Latest Reviews</h3>
+	<ul class="media-list">
+      <% for(var movieId in movieObj){ %>
+  		<li class="media">
+    		<div class="media-left">
+      			<a href="<%= movieObj[movieId].movieRoute %>">
+        			<img class="media-object" width="64" height="64" src="/images/<%= movieObj[movieId].imageName %>" alt="...">
+      			</a>
+    		</div>
+    		<div class="media-body">
+      			<h4 class="media-heading"><%= movieObj[movieId].name %></h4>
+      			<%= movieObj[movieId].review %>
+    		</div>
+  		</li>
+      <% } %>
+</ul>
+  </div>
+  <% include partials/page/footer.ejs %>
+  <% include partials/page/jsdefaults.ejs %>
+</body>
+</html>

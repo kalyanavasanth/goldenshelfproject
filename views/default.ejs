@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include partials/page/head.ejs %>
+</head>
+<body>
+  <% include partials/page/header.ejs %>
+  <div class="container">
+    <h1><%= pagetitle %></h1>
+    <h2 class="alert alert-info"><%= movieObj.name %></h2>
+    <img src = "/images/<%= movieObj.imageName %>" />
+    <div class = "jumbotron">
+    <p>
+      <b>Rating:</b> 
+      <% for(var j=0;j<movieObj.rating;++j){ %>
+      <span class="glyphicon glyphicon-star"></span>
+      <% } %>
+    </p>
+    <p><b>Review:</b> <%= movieObj.review %></p>
+    </div>
+  </div>
+  <% include partials/page/footer.ejs %>
+  <% include partials/page/jsdefaults.ejs %>
+</body>
+</html>
